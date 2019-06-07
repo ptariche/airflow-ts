@@ -1,0 +1,49 @@
+{
+  "name": "airflow-api",
+  "version": "0.1.0",
+  "description": "A node module for airflow in Typescript",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build-document": "npm run build && npm run documentation-html && npm run documentation-markdown",
+    "documentation-html": "./node_modules/.bin/typedoc --target ES6 --out docs-html/ ./src",
+    "documentation-markdown": "./node_modules/.bin/typedoc --theme markdown --mdDocusaurus --mdHideSources --out docs-markdown/ ./src",
+    "build": "./node_modules/.bin/tsc",
+    "start": "./node_modules/.bin/ts-node ./src/index.ts",
+    "test": "jest --forceExit --coverage --verbose"
+  },
+  "engines": {
+    "node": "10.x.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ptariche/airflow-ts.git"
+  },
+  "keywords": [
+    "airflow",
+    "typescript"
+  ],
+  "author": "Peter A. Tariche",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ptariche/airflow-ts/issues"
+  },
+  "homepage": "https://github.com/ptariche/airflow-ts#readme",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/jest": "^24.0.13",
+    "@types/supertest": "^2.0.7",
+    "chai": "^4.2.0",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1",
+    "supertest": "^4.0.2",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.2.0",
+    "typedoc": "^0.14.2",
+    "typedoc-plugin-markdown": "^1.2.1",
+    "typescript": "^3.5.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.0"
+  }
+}
