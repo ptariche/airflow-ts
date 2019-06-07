@@ -28,7 +28,7 @@ $ npm install --save airflow-api
     airflowUrl: 'http://127.0.0.1:8080'
   });
 
-  _client..buildVersion().then(result => console.log(result));
+  _client.checkTest().then(result => console.log(result)).catch(err => console.error(err));
   
 ```
 
