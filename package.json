@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build-document": "npm run build && npm run documentation-html && npm run documentation-markdown",
+    "build-document": "npm run build && npm run documentation-markdown",
     "documentation-html": "./node_modules/.bin/typedoc --target ES6 --out docs-html/ ./src",
     "documentation-markdown": "./node_modules/.bin/typedoc --theme markdown --mdDocusaurus --mdHideSources --out docs-markdown/ ./src",
     "build": "./node_modules/.bin/tsc",

@@ -1,5 +1,5 @@
 # Airflow-API
-A Node module for Airflow in Typescript
+A Node module for Airflow in Typescript. This uses the experimental Airflow API.
 
 [![npm version](https://badge.fury.io/js/airflow-api.svg)](https://badge.fury.io/js/airflow-api)
 [![Build Status](https://travis-ci.org/ptariche/airflow-ts.svg?branch=master)](https://travis-ci.org/ptariche/airflow-ts)
@@ -7,7 +7,6 @@ A Node module for Airflow in Typescript
 ## Documentation
 
 * [MARKDOWN](./docs-markdown/api-readme.md)
-* [HTML](./docs-html/index.html)
 
 ----
 ### Prerequisites

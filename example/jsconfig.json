@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "checkJs": true
+  },
+  "typeAcquisition": {
+    "include": ["../dist/types"],
+    "enable": true
+  }
+}

@@ -26,10 +26,21 @@ class Airflow {
       throw new Error ('airflowUrl is required');
     }
 
-    const _axios:AxiosInstance = Axios.create({
+    let auth:{username: string, password: string};
+
+    const configBase:{baseURL:string, timeout:number} = {
       baseURL: config.airflowUrl,
       timeout: config.timeout || 10000,
-    });
+    };
+
+    if (config.airFlowUsername && config.airFlowPassword) {
+      auth = {
+        username: config.airFlowUsername,
+        password: config.airFlowPassword
+      };
+    }
+
+    const _axios:AxiosInstance = Axios.create(Object.assign({}, configBase, auth));
 
     _axios.interceptors.response.use(
       (response: AxiosResponse) => response && response.data ? response.data : null,

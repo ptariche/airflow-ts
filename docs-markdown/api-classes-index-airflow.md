@@ -99,7 +99,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| conf | `object` |
+| conf | `any` |
 
 **Returns:** `Promise`<`any`>
 
