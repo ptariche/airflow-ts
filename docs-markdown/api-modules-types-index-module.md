@@ -488,11 +488,11 @@ ___
 
 #### Type declaration
 
-`Optional`  airFlowPassword: `string`
-
-`Optional`  airFlowUsername: `string`
+`Optional`  airflowPassword: `string`
 
  airflowUrl: `string`
+
+`Optional`  airflowUsername: `string`
 
 `Optional`  timeout: `number` \| `undefined` \| `null`
 

@@ -33,10 +33,10 @@ class Airflow {
       timeout: config.timeout || 10000,
     };
 
-    if (config.airFlowUsername && config.airFlowPassword) {
+    if (config.airflowUsername && config.airflowPassword) {
       auth = {
-        username: config.airFlowUsername,
-        password: config.airFlowPassword
+        username: config.airflowUsername,
+        password: config.airflowPassword
       };
     }
 
