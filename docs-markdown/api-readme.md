@@ -4,27 +4,41 @@ title: airflow-api
 sidebar_label: airflow-api
 ---
 
+[
+
 Airflow-API
 ===========
+
+](#airflow-api)
 
 A Node module for Airflow in Typescript. This uses the experimental Airflow API.
 
 [![npm version](https://badge.fury.io/js/airflow-api.svg)](https://badge.fury.io/js/airflow-api) [![Build Status](https://travis-ci.org/ptariche/airflow-ts.svg?branch=master)](https://travis-ci.org/ptariche/airflow-ts)
 
+[
+
 Documentation
 -------------
 
-* [[index Module]](api-modules-index-module.md)
-* [[types/index Module]](api-modules-types-index-module.md)
+](#documentation)
 
+*   [MARKDOWN](./docs-markdown/api-readme.md)
 
 * * *
 
+[
+
 ### Prerequisites
+
+](#prerequisites)
 
 *   Node 10+
 
+[
+
 ### Installation
+
+](#installation)
 
 Install the dependencies and devDependencies and start the server.
 
@@ -32,7 +46,11 @@ Install the dependencies and devDependencies and start the server.
 $ npm install --save airflow-api
 ```
 
+[
+
 ### Usage
+
+](#usage)
 
 ```js
   import {client} from 'airflow-api'; or  const CLIENT = require('airflow-api').client;
@@ -45,17 +63,29 @@ $ npm install --save airflow-api
 
 ```
 
+[
+
 ### Enums Usage
+
+](#enums-usage)
 
 ```js
   import * as AirflowEnum from 'airflow-api/dist/types' or   const AIRFLOW_ENUMS = require('airflow-api/dist/types');
 ```
 
+[
+
 ### Development
+
+](#development)
 
 Want to contribute? Great! Make a Pr! Open your favorite Terminal and run these commands.
 
+[
+
 #### Building for source
+
+](#building-for-source)
 
 To release in javascript. The output is dumped in the dist folder:
 
@@ -63,7 +93,11 @@ To release in javascript. The output is dumped in the dist folder:
 $ npm run build
 ```
 
+[
+
 #### Testing
+
+](#testing)
 
 *   Uses Jest, Supertest, Chai - Integration Tests needed
     
@@ -72,17 +106,37 @@ $ npm run build
     ```
     
 
+[
+
 Changelog
 ---------
 
+](#changelog)
+
 [Link](./CHANGELOG.md)
+
+[
 
 License
 -------
 
+](#license)
+
 [Apache-2.0](./LICENSE)
+
+[
 
 Author
 ------
 
+](#author)
+
 [Peter A. Tariche](https://github.com/ptariche)
+
+### External modules
+
+* [[index Module]](api-modules-index-module.md)
+* [[types/index Module]](api-modules-types-index-module.md)
+
+---
+
