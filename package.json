@@ -13,7 +13,7 @@
     "test": "jest --forceExit --coverage --verbose"
   },
   "engines": {
-    "node": "10.x.x"
+    "node": "12.x.x"
   },
   "repository": {
     "type": "git",
