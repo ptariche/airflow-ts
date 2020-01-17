@@ -1,7 +1,7 @@
 ---
 id: api-readme
-title: airflow-api
-sidebar_label: airflow-api
+title: airflow-api - v0.1.8
+sidebar_label: airflow-api - v0.1.8
 ---
 
 [

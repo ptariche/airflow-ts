@@ -4,7 +4,7 @@ title: httpMethods
 sidebar_label: httpMethods
 ---
 
-[airflow-api](api-readme.md) > [[types/index Module]](api-modules-types-index-module.md) > [httpMethods](api-enums-types-index-httpmethods.md)
+[airflow-api - v0.1.8](api-readme.md) > [[types/index Module]](api-modules-types-index-module.md) > [httpMethods](api-enums-types-index-httpmethods.md)
 
 ## Enumeration
 

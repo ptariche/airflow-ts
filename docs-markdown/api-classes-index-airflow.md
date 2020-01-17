@@ -4,7 +4,7 @@ title: Airflow
 sidebar_label: Airflow
 ---
 
-[airflow-api](api-readme.md) > [[index Module]](api-modules-index-module.md) > [Airflow](api-classes-index-airflow.md)
+[airflow-api - v0.1.8](api-readme.md) > [[index Module]](api-modules-index-module.md) > [Airflow](api-classes-index-airflow.md)
 
 ## Class
 

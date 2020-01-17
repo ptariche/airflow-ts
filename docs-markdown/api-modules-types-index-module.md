@@ -4,7 +4,7 @@ title: types/index Module
 sidebar_label: types/index
 ---
 
-[airflow-api](api-readme.md) > [[types/index Module]](api-modules-types-index-module.md)
+[airflow-api - v0.1.8](api-readme.md) > [[types/index Module]](api-modules-types-index-module.md)
 
 ## Module
 
@@ -54,14 +54,6 @@ sidebar_label: types/index
 
 **Ƭ createDAGRunFunction**: *`function`*
 
-*__remarks__*: You can create a DAG run based off of a config.
-
-*__param__*: DAG ID
-
-*__param__*: Object
-
-*__param__*: Object
-
 #### Type declaration
 ▸(id: *`string`*, options: *[dagConfigOptions](api-modules-types-index-module.md#dagconfigoptions)*): `Promise`<[dagRunCreateResponse](api-modules-types-index-module.md#dagruncreateresponse) \| [errorGenericResponse](api-modules-types-index-module.md#errorgenericresponse)>
 
@@ -95,18 +87,6 @@ ___
 ###  createPoolFunction
 
 **Ƭ createPoolFunction**: *`function`*
-
-*__remarks__*: You can create a DAG Pool
-
-*__param__*: DAG ID
-
-*__param__*: Object
-
-*__param__*: name
-
-*__param__*: number,
-
-*__param__*: name
 
 #### Type declaration
 ▸(options: *[createPoolConfig](api-modules-types-index-module.md#createpoolconfig)*): `Promise`<`object`>
@@ -176,10 +156,6 @@ ___
 
 **Ƭ getDAGRunFunction**: *`function`*
 
-*__remarks__*: You can lookup a DAG run by ID
-
-*__param__*: DAG ID
-
 #### Type declaration
 ▸(id: *`string`*): `Promise`<[getDagResponse](api-modules-types-index-module.md#getdagresponse) \| [dagRunInterface](api-interfaces-types-index-dagruninterface.md) \| [errorGenericResponse](api-modules-types-index-module.md#errorgenericresponse)>
 
@@ -197,12 +173,6 @@ ___
 ###  getDAGRunbyDateFunction
 
 **Ƭ getDAGRunbyDateFunction**: *`function`*
-
-*__remarks__*: You can lookup a DAG run by ID and Date
-
-*__param__*: DAG ID
-
-*__param__*: YYYY-mm-DDTHH:MM:SS
 
 #### Type declaration
 ▸(id: *`string`*, date: *`string`*): `Promise`<[dagRunInterface](api-interfaces-types-index-dagruninterface.md) \| [getDagResponse](api-modules-types-index-module.md#getdagresponse) \| [errorGenericResponse](api-modules-types-index-module.md#errorgenericresponse)>
@@ -223,14 +193,6 @@ ___
 
 **Ƭ getDAGTaskDateFunction**: *`function`*
 
-*__remarks__*: You can lookup a DAG Task by ID and TaskID and Date
-
-*__param__*: DAG ID
-
-*__param__*: Task ID
-
-*__param__*: YYYY-mm-DDTHH:MM:SS
-
 #### Type declaration
 ▸(id: *`string`*, taskId: *`string`*, date: *`string`*): `Promise`<`object` \| [errorGenericResponse](api-modules-types-index-module.md#errorgenericresponse)>
 
@@ -250,12 +212,6 @@ ___
 ###  getDAGTaskFunction
 
 **Ƭ getDAGTaskFunction**: *`function`*
-
-*__remarks__*: You can lookup a DAG Task by ID and TaskID
-
-*__param__*: DAG ID
-
-*__param__*: Task ID
 
 #### Type declaration
 ▸(id: *`string`*, taskId: *`string`*): `Promise`<`object` \| [errorGenericResponse](api-modules-types-index-module.md#errorgenericresponse)>
@@ -294,8 +250,6 @@ ___
 
 **Ƭ getPoolsFunction**: *`function`*
 
-*__remarks__*: Get All Pools
-
 #### Type declaration
 ▸(): `Promise`<[getPoolsResponse](api-modules-types-index-module.md#getpoolsresponse) \| `null`>
 
@@ -307,10 +261,6 @@ ___
 ###  getPoolsNameFunction
 
 **Ƭ getPoolsNameFunction**: *`function`*
-
-*__remarks__*: Get Pool by Name
-
-*__param__*: Pool Name
 
 #### Type declaration
 ▸(name: *`string`*): `Promise`<[poolResponse](api-modules-types-index-module.md#poolresponse) \| [errorGenericResponse](api-modules-types-index-module.md#errorgenericresponse) \| `null`>
@@ -348,8 +298,6 @@ ___
 
 **Ƭ getTestFunction**: *`function`*
 
-*__remarks__*: You check the test endpoint
-
 #### Type declaration
 ▸(): `Promise`<[getStatusResponse](api-modules-types-index-module.md#getstatusresponse) \| `null`>
 
@@ -362,8 +310,6 @@ ___
 
 **Ƭ latestDAGRunsFunction**: *`function`*
 
-*__remarks__*: Get the latest DAG Runs
-
 #### Type declaration
 ▸(): `Promise`<[getLatestDagResponse](api-modules-types-index-module.md#getlatestdagresponse) \| [errorGenericResponse](api-modules-types-index-module.md#errorgenericresponse)>
 
@@ -375,12 +321,6 @@ ___
 ###  pauseDAGFunction
 
 **Ƭ pauseDAGFunction**: *`function`*
-
-*__remarks__*: You can Pause a DAG
-
-*__param__*: DAG ID
-
-*__param__*: Pause the DAG
 
 #### Type declaration
 ▸(id: *`string`*, pause: *`boolean`*): `Promise`<`object`>
@@ -418,10 +358,6 @@ ___
 
 **Ƭ removePoolNameFunction**: *`function`*
 
-*__remarks__*: Get Pool by Name
-
-*__param__*: Pool Name
-
 #### Type declaration
 ▸(name: *`string`*): `Promise`<[removePoolResponse](api-modules-types-index-module.md#removepoolresponse) \| `null`>
 
@@ -447,16 +383,8 @@ ___
 
 **Ƭ retrieveFunction**: *`function`*
 
-*__remarks__*: The Axios Retrieve Function Signature
-
-*__param__*: Optional\* The body to post or put
-
-*__param__*: The rest path
-
-*__param__*: HTTP Method: get,post,put,delete,patch
-
 #### Type declaration
-▸(method: *[httpMethods](api-enums-types-index-httpmethods.md)*, route: *`string`*, body?: *`object` \| `string` \| `null` \| `undefined`*, options?: *`object` \| `null` \| `undefined`*): `Promise`<`any`>
+▸(method: *[httpMethods](api-enums-types-index-httpmethods.md)*, route: *`string`*, body: *`object` \| `string` \| `null` \| `undefined`*, options: *`object` \| `null` \| `undefined`*): `Promise`<`any`>
 
 **Parameters:**
 
@@ -475,16 +403,6 @@ ___
 ###  typeAirflowConfig
 
 **Ƭ typeAirflowConfig**: *`object`*
-
-*__remarks__*: The configuration values for the node module
-
-*__param__*: Optional\* The Timeout limitation in milliseconds
-
-*__param__*: The API URL [http://127.0.0.1:8080](http://127.0.0.1:8080)
-
-*__param__*: \*Optional The Airflow Username
-
-*__param__*: \*Optional The Airflow Password
 
 #### Type declaration
 
