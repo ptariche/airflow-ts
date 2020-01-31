@@ -30,8 +30,8 @@
   },
   "homepage": "https://github.com/ptariche/airflow-ts#readme",
   "devDependencies": {
-    "@types/chai": "^4.2.7",
-    "@types/jest": "^24.9.0",
+    "@types/chai": "^4.2.8",
+    "@types/jest": "^24.9.1",
     "@types/supertest": "^2.0.8",
     "chai": "^4.2.0",
     "jest": "^24.9.0",
@@ -44,6 +44,6 @@
     "typescript": "^3.7.5"
   },
   "dependencies": {
-    "axios": "^0.19.1"
+    "axios": "^0.19.2"
   }
 }
